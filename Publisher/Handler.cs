@@ -28,7 +28,7 @@ class Handler
                 byte[] body = ea.Body.ToArray();
                 string message = Encoding.UTF8.GetString(body);
 
-                Console.WriteLine($" [ X ] Received {message}");
+                Console.WriteLine($" [x] Received - {message}");
 
                 await Task.Delay(500);
             };
